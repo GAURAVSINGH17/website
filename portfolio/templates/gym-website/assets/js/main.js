@@ -69,7 +69,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ---- COUNTER ANIMATION ----
   function animateCounter(el) {
-    const target = parseInt(el.getAttribute('data-target'));
+    const targetAttr = el.getAttribute('data-target');
+    if (!targetAttr) return;
+    const target = parseInt(targetAttr);
     const suffix = el.getAttribute('data-suffix') || '';
     const duration = 1800;
     const step = target / (duration / 16);
@@ -83,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
       el.textContent = Math.floor(current) + suffix;
     }, 16);
   }
-  const counterEls = document.querySelectorAll('.badge-num, .mvc-number');
+  const counterEls = document.querySelectorAll('.badge-num, .stat-num');
   const counterObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
