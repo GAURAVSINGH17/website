@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PowerForge Gym | Train Hard. Live Strong.</title>
+  <meta name="description" content="PowerForge Gym – Premium fitness center with expert trainers, state-of-the-art equipment, and personalized programs. Join today!"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Replace this favicon with your logo -->
+  <link rel="icon" type="image/png" href="https://placehold.co/32x32/c9a84c/000?text=PF"/>
+</head>
+<body>
+
+  <!-- PAGE LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo-text">POWERFORGE</div>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo" id="site-logo">
+      <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="40" rx="6" fill="url(#lg1)"/>
+        <!-- Dumbbell bar -->
+        <rect x="7" y="18" width="26" height="4" rx="2" fill="#0a0a0a"/>
+        <!-- Left weight plates -->
+        <rect x="4" y="13" width="5" height="14" rx="2" fill="#0a0a0a" opacity="0.85"/>
+        <rect x="7" y="11" width="3" height="18" rx="1.5" fill="#0a0a0a"/>
+        <!-- Right weight plates -->
+        <rect x="31" y="13" width="5" height="14" rx="2" fill="#0a0a0a" opacity="0.85"/>
+        <rect x="30" y="11" width="3" height="18" rx="1.5" fill="#0a0a0a"/>
+        <!-- Lightning bolt accent -->
+        <path d="M22 9 L17 21 H21 L18 31 L27 17 H23 L26 9 Z" fill="#0a0a0a" opacity="0.9"/>
+        <defs>
+          <linearGradient id="lg1" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#c9a84c"/>
+            <stop offset="100%" stop-color="#f0c860"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span class="logo-text">POWER<em>FORGE</em></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li class="dropdown">
+        <a href="#">Branches <span class="dropdown-arrow">▾</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Branch - Location 1</a></li>
+          <li><a href="#">Branch - Location 2</a></li>
+          <li><a href="#">Branch - Location 3</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <!-- WhatsApp CTA -->
+    <div class="nav-cta-wrap">
+      <a href="https://wa.me/919999999999?text=Hi, I want to join PowerForge Gym!" class="nav-cta btn" target="_blank">Join Now</a>
+    </div>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <ul class="mobile-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="classes.html">Classes</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="#">Branches</a>
+      <ul class="mobile-sub">
+        <li><a href="#">Branch - Location 1</a></li>
+        <li><a href="#">Branch - Location 2</a></li>
+        <li><a href="#">Branch - Location 3</a></li>
+      </ul>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="https://wa.me/919999999999" style="color:var(--gold)">📲 Join Now</a></li>
+  </ul>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero">
+    <!-- Video Background: MP4 format (H.264 codec), max 5MB file size, 1920x1080 resolution recommended -->
+    <video class="hero-video" autoplay muted loop playsinline preload="auto">
+      <source src="assets/img/2.mp4" type="video/mp4">
+      <source src="assets/img/6.mp4" type="video/mp4">
+    </video>
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-tag">⚡ Train Hard. Live Strong.</div>
+      <h1 class="hero-title">
+        Your Fitness
+        <span>Journey Starts Here</span>
+      </h1>
+      <p class="hero-desc">
+        World-class equipment, expert trainers, and a community that pushes you to be your best.
+        No excuses — just results.
+      </p>
+      <div class="hero-btns">
+        <a href="https://wa.me/919999999999?text=Hi, I want to Join PowerForge Gym!" class="btn btn-hero-gold" target="_blank" id="hero-join-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:6px;"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          Join Now — Free Trial
+        </a>
+        <a href="about.html" class="btn btn-hero-outline" id="hero-about-btn">About Us</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== STATS BAR ========== -->
+  <div class="stats-bar">
+    <div class="stat-item">
+      <div class="stat-num" data-target="5000" data-suffix="+">0</div>
+      <div class="stat-label">Active Members</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" data-target="50" data-suffix="+">0</div>
+      <div class="stat-label">Expert Trainers</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" data-target="10" data-suffix="+">0</div>
+      <div class="stat-label">Years of Excellence</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" data-target="4" data-suffix="">0</div>
+      <div class="stat-label">Gym Locations</div>
+    </div>
+  </div>
+
+  <!-- ========== MISSION / VISION / COMMITMENT ========== -->
+  <section class="section">
+    <div class="mvc-grid">
+      <div class="mvc-card reveal">
+        <div class="mvc-number">01</div>
+        <div class="mvc-title">Our Mission</div>
+        <div class="mvc-divider"></div>
+        <p>Our mission at PowerForge Gym is to empower individuals through fitness, fostering physical, mental, and emotional well-being. We provide expert guidance, state-of-the-art facilities, and personalized training to help members achieve their goals and inspire lasting lifestyle transformations.</p>
+      </div>
+      <div class="mvc-card reveal" style="transition-delay:0.1s">
+        <div class="mvc-number">02</div>
+        <div class="mvc-title">Our Vision</div>
+        <div class="mvc-divider"></div>
+        <p>Our vision is to be a leading fitness destination that transforms lives through innovation, expert guidance, and a supportive community. We strive to inspire individuals to embrace a healthier lifestyle, build confidence, and achieve holistic well-being through world-class facilities.</p>
+      </div>
+      <div class="mvc-card reveal" style="transition-delay:0.2s">
+        <div class="mvc-number">03</div>
+        <div class="mvc-title">Our Commitment</div>
+        <div class="mvc-divider"></div>
+        <p>Our commitment is to provide a motivating and inclusive fitness environment where every member feels supported. We ensure top-notch facilities, expert guidance, and personalized training programs to help individuals achieve their health goals with safety, innovation, and long-term wellness.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="section section-alt">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal-left">
+        <!-- About section video -->
+        <video class="about-img-main" autoplay muted loop playsinline>
+          <source src="assets/img/4.mp4" type="video/mp4">
+          <source src="assets/img/2.mp4" type="video/mp4">
+        </video>
+        <div class="about-img-badge">
+          <div class="badge-num">10+</div>
+          <div class="badge-text">Years of Excellence</div>
+        </div>
+      </div>
+      <div class="about-content reveal-right">
+        <span class="section-tag">About Us</span>
+        <h2 class="section-title">A Lifestyle of <span>Strength</span> & Wellness</h2>
+        <div class="section-divider"></div>
+        <p style="color:var(--gray);line-height:1.8;margin-bottom:16px;">
+          Welcome to PowerForge Gym, where fitness meets holistic wellness. We go beyond traditional workouts to offer a complete mind-body transformation with expert support and personalized care.
+        </p>
+        <p style="color:var(--gray);line-height:1.8;margin-bottom:24px;">
+          From Doctor Consultations that ensure you're medically fit to begin your transformation, to Personal Training designed around your body type and goals — we guide you every step of the way.
+        </p>
+        <div class="about-features">
+          <div class="about-feature">Doctor Consultation</div>
+          <div class="about-feature">Personal Training</div>
+          <div class="about-feature">Nutrition Plan</div>
+          <div class="about-feature">Yoga & Zumba</div>
+          <div class="about-feature">Steam & Sauna</div>
+          <div class="about-feature">Group Classes</div>
+        </div>
+        <a href="about.html" class="btn btn-gold">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY CHOOSE US ========== -->
+  <section class="section">
+    <div class="text-center reveal">
+      <span class="section-tag">Why Choose Us</span>
+      <h2 class="section-title">Unique to <span>Your Needs</span></h2>
+      <div class="section-divider center"></div>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <span class="why-icon">🏋️</span>
+        <div class="why-title">Modern Equipment</div>
+        <p>State-of-the-art machines targeting all muscle groups, ensuring effective workouts and proper technique for every fitness level.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon">🥗</span>
+        <div class="why-title">Nutrition Plan</div>
+        <p>Qualified nutritionists create personalized meal plans tailored to your body type, workout intensity, and fitness goals.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon">👨‍💼</span>
+        <div class="why-title">Expert Trainers</div>
+        <p>Certified professionals dedicated to your progress — offering personal attention, motivating sessions, and science-backed programs.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon">🏆</span>
+        <div class="why-title">Proven Results</div>
+        <p>Thousands of success stories with measurable transformations. Your goals are our goals — and we don't stop till you get there.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== OUR CLASSES ========== -->
+  <section class="section section-alt">
+    <div class="text-center reveal">
+      <span class="section-tag">Our Classes</span>
+      <h2 class="section-title">What We <span>Can Offer</span></h2>
+      <div class="section-divider center"></div>
+    </div>
+    <div class="classes-grid">
+      <div class="class-card reveal">
+        <img src="assets/img/15.jpg" alt="Doctor Consultation">
+        <div class="class-overlay"></div>
+        <div class="class-info">
+          <div class="class-name">Doctor Consultation</div>
+          <div class="class-divider"></div>
+          <div class="class-desc">Get medically cleared and guided by health professionals before starting your transformation.</div>
+        </div>
+      </div>
+      <div class="class-card reveal">
+        <img src="assets/img/20.jpg" alt="Workout Programs">
+        <div class="class-overlay"></div>
+        <div class="class-info">
+          <div class="class-name">Workout Programs</div>
+          <div class="class-divider"></div>
+          <div class="class-desc">Structured programs for strength, fat loss, or muscle gain — designed just for you.</div>
+        </div>
+      </div>
+      <div class="class-card reveal">
+        <img src="assets/img/7.jpg" alt="Live Classes">
+        <div class="class-overlay"></div>
+        <div class="class-info">
+          <div class="class-name">Live Classes</div>
+          <div class="class-divider"></div>
+          <div class="class-desc">High-energy group sessions with expert instructors to keep you motivated and on track.</div>
+        </div>
+      </div>
+      <div class="class-card reveal">
+        <img src="assets/img/3.jpg" alt="Personal Training">
+        <div class="class-overlay"></div>
+        <div class="class-info">
+          <div class="class-name">Personal Training</div>
+          <div class="class-divider"></div>
+          <div class="class-desc">One-on-one sessions with a dedicated trainer to fast-track your results safely.</div>
+        </div>
+      </div>
+      <div class="class-card reveal">
+        <img src="assets/img/11.jpg" alt="Nutrition Consultation">
+        <div class="class-overlay"></div>
+        <div class="class-info">
+          <div class="class-name">Nutrition Consultation</div>
+          <div class="class-divider"></div>
+          <div class="class-desc">Expert dietary advice paired with your fitness plan for optimal body composition.</div>
+        </div>
+      </div>
+      <div class="class-card reveal">
+        <img src="assets/img/21.jpg" alt="Therapy Session">
+        <div class="class-overlay"></div>
+        <div class="class-info">
+          <div class="class-name">Therapy Session</div>
+          <div class="class-divider"></div>
+          <div class="class-desc">Recovery and physiotherapy to keep your body moving pain-free and at peak performance.</div>
+        </div>
+      </div>
+      <div class="class-card reveal">
+        <img src="assets/img/9.jpg" alt="Yoga Classes">
+        <div class="class-overlay"></div>
+        <div class="class-info">
+          <div class="class-name">Yoga Classes</div>
+          <div class="class-divider"></div>
+          <div class="class-desc">Improve flexibility, mental clarity, and balance with daily guided yoga sessions.</div>
+        </div>
+      </div>
+      <div class="class-card reveal">
+        <img src="assets/img/19.jpg" alt="Group Training">
+        <div class="class-overlay"></div>
+        <div class="class-info">
+          <div class="class-name">Group Training</div>
+          <div class="class-divider"></div>
+          <div class="class-desc">Train with a squad — competitive, fun, and motivating group fitness sessions daily.</div>
+        </div>
+      </div>
+      <div class="class-card reveal">
+        <img src="assets/img/10.jpg" alt="Zumba & Dance">
+        <div class="class-overlay"></div>
+        <div class="class-info">
+          <div class="class-name">Zumba &amp; Dance</div>
+          <div class="class-divider"></div>
+          <div class="class-desc">Burn calories while having fun — high-energy dance sessions for all fitness levels.</div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px">
+      <a href="classes.html" class="btn btn-gold">View All Classes</a>
+    </div>
+  </section>
+
+  <!-- ========== BUILD YOUR BODY ========== -->
+  <section class="section">
+    <div class="text-center reveal">
+      <span class="section-tag">Transform Your Life</span>
+      <h2 class="section-title">Build Your <span>Body</span></h2>
+      <div class="section-divider center"></div>
+    </div>
+    <div class="build-grid">
+      <div class="reveal-left">
+        <div class="build-tabs">
+          <button class="build-tab active" data-target="tab-fitness">Fitness</button>
+          <button class="build-tab" data-target="tab-health">Health</button>
+          <button class="build-tab" data-target="tab-dance">Dance</button>
+          <button class="build-tab" data-target="tab-yoga">Yoga</button>
+        </div>
+        <div class="build-content active" id="tab-fitness">
+          <h3>Fitness Training</h3>
+          <p>Fitness is a journey of strength, endurance, and well-being, enhancing physical health, mental clarity, and overall quality of life. Our programs are tailored to every level — from beginner to elite athlete.</p>
+          <p>With proven methodologies and cutting-edge equipment, our trainers design programs that push your limits safely and effectively.</p>
+          <a href="classes.html" class="btn btn-gold">Get Started</a>
+        </div>
+        <div class="build-content" id="tab-health">
+          <h3>Health & Wellness</h3>
+          <p>Health is a balance of physical, mental, and emotional well-being, achieved through proper nutrition, exercise, rest, and a positive mindset. We guide your complete wellness journey.</p>
+          <p>Our doctors and wellness experts work hand-in-hand with trainers to ensure your health is always prioritized at every step.</p>
+          <a href="services.html" class="btn btn-gold">Our Services</a>
+        </div>
+        <div class="build-content" id="tab-dance">
+          <h3>Dance & Aerobics</h3>
+          <p>PowerForge Gym offers energetic dance and Zumba classes that help you stay fit, burn maximum calories, and enjoy every move in a vibrant, high-energy atmosphere.</p>
+          <p>No experience needed — just a love for music and movement. Burn up to 600 calories per session while having the time of your life.</p>
+          <a href="classes.html" class="btn btn-gold">Join a Class</a>
+        </div>
+        <div class="build-content" id="tab-yoga">
+          <h3>Yoga & Meditation</h3>
+          <p>Our rejuvenating yoga classes promote flexibility, strength, and deep mental relaxation — helping you achieve balance, inner peace, and total body well-being.</p>
+          <p>Guided by certified yoga instructors, sessions range from beginner Hatha to advanced Vinyasa flow — all in a calm, dedicated space.</p>
+          <a href="classes.html" class="btn btn-gold">Find Your Flow</a>
+        </div>
+      </div>
+      <div class="build-img-wrap reveal-right">
+        <div class="build-video-container">
+          <video autoplay muted loop playsinline>
+            <source src="assets/img/6.mp4" type="video/mp4">
+          </video>
+          <div class="build-video-frame"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY PREVIEW ========== -->
+  <section class="section section-alt">
+    <div class="text-center reveal">
+      <span class="section-tag">Our Gallery</span>
+      <h2 class="section-title">Inside <span>PowerForge</span></h2>
+      <div class="section-divider center"></div>
+    </div>
+    <div class="gallery-grid">
+      <!-- ROW 1: image | video | image -->
+       <div class="gallery-item gallery-vid reveal">
+        <video autoplay muted loop playsinline><source src="assets/img/2.mp4" type="video/mp4"></video>
+        <div class="gallery-overlay"><div class="gallery-plus">▶</div></div>
+      </div>
+      <div class="gallery-item reveal"><img src="https://picsum.photos/seed/gal1/600/360" alt="Gym"><div class="gallery-overlay"><div class="gallery-plus">+</div></div></div>
+      <div class="gallery-item reveal"><img src="https://picsum.photos/seed/gal2/600/360" alt="Gym"><div class="gallery-overlay"><div class="gallery-plus">+</div></div></div>
+      <!-- ROW 2: image | video | image -->
+      <div class="gallery-item reveal"><img src="https://picsum.photos/seed/gal3/600/360" alt="Gym"><div class="gallery-overlay"><div class="gallery-plus">+</div></div></div>
+      <div class="gallery-item gallery-vid reveal">
+        <video autoplay muted loop playsinline><source src="assets/img/6.mp4" type="video/mp4"></video>
+        <div class="gallery-overlay"><div class="gallery-plus">▶</div></div>
+      </div>
+      <div class="gallery-item reveal"><img src="https://picsum.photos/seed/gal4/600/360" alt="Gym"><div class="gallery-overlay"><div class="gallery-plus">+</div></div></div>
+      <!-- ROW 3: image | video | image -->
+      <div class="gallery-item reveal"><img src="https://picsum.photos/seed/gal5/600/360" alt="Gym"><div class="gallery-overlay"><div class="gallery-plus">+</div></div></div>
+      <div class="gallery-item reveal"><img src="https://picsum.photos/seed/gal6/600/360" alt="Gym"><div class="gallery-overlay"><div class="gallery-plus">+</div></div></div>
+      <div class="gallery-item gallery-vid reveal">
+        <video autoplay muted loop playsinline><source src="assets/img/4.mp4" type="video/mp4"></video>
+        <div class="gallery-overlay"><div class="gallery-plus">▶</div></div>
+      </div>
+    </div>
+    <div class="gallery-cta">
+      <a href="gallery.html" class="btn btn-gold">View Full Gallery</a>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section class="section" id="pricing">
+    <div class="text-center reveal">
+      <span class="section-tag">Choose Your Plan</span>
+      <h2 class="section-title">Simple <span>Pricing</span></h2>
+      <div class="section-divider center"></div>
+    </div>
+    <div class="pricing-grid">
+      <!-- 3 Months -->
+      <div class="price-card reveal">
+        <div class="price-duration">3 Months</div>
+        <div class="price-amount"><sup>₹</sup>2,499<span>/plan</span></div>
+        <p class="price-desc">Perfect for getting started and building your base fitness routine.</p>
+        <ul class="price-features">
+          <li>Gym Access (All Days)</li>
+          <li>Yoga Classes</li>
+          <li>Zumba Classes</li>
+          <li>Locker Facility</li>
+          <li>Changing Room</li>
+          <li class="disabled">Steam & Sauna</li>
+          <li class="disabled">Personal Trainer</li>
+          <li class="disabled">Nutrition Plan</li>
+        </ul>
+        <a href="https://wa.me/919999999999?text=Hi, I want the 3-month plan!" class="btn btn-outline" style="width:100%;text-align:center;" target="_blank">Join Now</a>
+      </div>
+      <!-- 6 Months -->
+      <div class="price-card reveal" style="transition-delay:0.1s">
+        <div class="price-duration">6 Months</div>
+        <div class="price-amount"><sup>₹</sup>4,499<span>/plan</span></div>
+        <p class="price-desc">Most popular choice for serious fitness goals and consistent training.</p>
+        <ul class="price-features">
+          <li>Gym Access (All Days)</li>
+          <li>Yoga Classes</li>
+          <li>Zumba Classes</li>
+          <li>Locker Facility</li>
+          <li>Changing Room</li>
+          <li>Steam & Sauna</li>
+          <li class="disabled">Personal Trainer</li>
+          <li class="disabled">Nutrition Plan</li>
+        </ul>
+        <a href="https://wa.me/919999999999?text=Hi, I want the 6-month plan!" class="btn btn-outline" style="width:100%;text-align:center;" target="_blank">Join Now</a>
+      </div>
+      <!-- 12 Months -->
+      <div class="price-card popular reveal" style="transition-delay:0.2s">
+        <div class="popular-badge">⭐ Most Popular</div>
+        <div class="price-duration">12 Months</div>
+        <div class="price-amount"><sup>₹</sup>7,999<span>/plan</span></div>
+        <p class="price-desc">The complete transformation package — best value, full access, maximum results.</p>
+        <ul class="price-features">
+          <li>Gym Access (All Days)</li>
+          <li>Yoga Classes</li>
+          <li>Zumba Classes</li>
+          <li>Locker Facility</li>
+          <li>Changing Room</li>
+          <li>Steam & Sauna</li>
+          <li>Personal Trainer</li>
+          <li>Nutrition Plan</li>
+        </ul>
+        <a href="https://wa.me/919999999999?text=Hi, I want the 12-month plan!" class="btn btn-gold" style="width:100%;text-align:center;" target="_blank">Join Now</a>
+      </div>
+    </div>
+    <p style="text-align:center;color:var(--gray);margin-top:20px;font-size:0.88rem;">* Prices are indicative. Contact us for actual pricing and ongoing offers.</p>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="section section-alt">
+    <div class="text-center reveal">
+      <span class="section-tag">Member Stories</span>
+      <h2 class="section-title">What Our <span>Members Say</span></h2>
+      <div class="section-divider center"></div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-quote">"</div>
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">PowerForge completely changed my lifestyle. In 6 months I lost 18 kg and gained the confidence I never had. The trainers are genuinely invested in your progress.</p>
+        <div class="testimonial-author">
+          <img src="https://picsum.photos/seed/person1/50/50" alt="Member">
+          <div>
+            <div class="author-name">Rahul Sharma</div>
+            <div class="author-role">Member since 2022</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal" style="transition-delay:0.1s">
+        <div class="testimonial-quote">"</div>
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">The yoga and Zumba classes are incredible. I've tried many gyms but the community here is what sets PowerForge apart. I actually look forward to coming every day!</p>
+        <div class="testimonial-author">
+          <img src="https://picsum.photos/seed/person2/50/50" alt="Member">
+          <div>
+            <div class="author-name">Priya Mehta</div>
+            <div class="author-role">Member since 2023</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal" style="transition-delay:0.2s">
+        <div class="testimonial-quote">"</div>
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">From the doctor consultation to the personalized training plan — everything is so well thought out. Best gym investment I've made. My body transformation speaks for itself.</p>
+        <div class="testimonial-author">
+          <img src="https://picsum.photos/seed/person3/50/50" alt="Member">
+          <div>
+            <div class="author-name">Arjun Kapoor</div>
+            <div class="author-role">Member since 2021</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VIDEO SECTION ========== -->
+  <section class="video-section">
+    <!-- Continuous looping background video -->
+    <video class="video-bg-video" autoplay muted loop playsinline>
+      <source src="assets/img/6.mp4" type="video/mp4">
+      <source src="assets/img/2.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+    <div class="video-content reveal">
+      <h2 class="video-title">See PowerForge <span class="gold-text">In Action</span></h2>
+      <p class="video-desc">Watch our gym tour and member transformation stories — see what makes PowerForge the #1 choice.</p>
+      <a href="https://wa.me/919999999999?text=Hi, I want a gym tour!" class="btn btn-gold" target="_blank">Book a Free Tour</a>
+    </div>
+  </section>
+  <!-- Video Modal -->
+  <div class="video-modal">
+    <div class="video-modal-inner">
+      <div class="modal-close">✕ CLOSE</div>
+      <!-- Replace YOUR_YOUTUBE_VIDEO_ID with your actual YouTube video ID -->
+      <iframe data-src="https://www.youtube.com/embed/YOUR_YOUTUBE_VIDEO_ID?autoplay=1" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- ========== NEW BRANCHES ========== -->
+  <section class="section">
+    <div class="text-center reveal">
+      <span class="section-tag">Expanding Fast</span>
+      <h2 class="section-title">New <span>Branches</span> Opening Soon</h2>
+      <div class="section-divider center"></div>
+    </div>
+    <div class="branch-grid">
+      <div class="branch-card reveal-left">
+        <!-- Replace with image of that area/location -->
+        <img src="https://picsum.photos/seed/branch1/700/400" alt="New Branch">
+        <div class="branch-info">
+          <div class="branch-tag">📍 Coming Soon</div>
+          <div class="branch-name">Branch — Location Name 1</div>
+          <p>We are opening a brand new branch in [Location]. Contact us now to pre-register and get exclusive early-bird offers.</p>
+          <a href="https://wa.me/919999999999?text=I want info about the new branch!" class="btn btn-gold" target="_blank">Enquire Now</a>
+        </div>
+      </div>
+      <div class="branch-card reveal-right">
+        <img src="https://picsum.photos/seed/branch2/700/400" alt="New Branch">
+        <div class="branch-info">
+          <div class="branch-tag">📍 Coming Soon</div>
+          <div class="branch-name">Branch — Location Name 2</div>
+          <p>Expanding to [Location 2] with even better facilities. Be the first to know — register your interest today.</p>
+          <a href="https://wa.me/919999999999?text=I want info about the new branch 2!" class="btn btn-gold" target="_blank">Enquire Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">POWER<span>FORGE</span></div>
+        <p>Your premier fitness destination. We're committed to transforming lives through fitness, nutrition, and a supportive community. Train hard. Live strong.</p>
+        <div class="social-links">
+          <a href="https://wa.me/919999999999" class="social-link" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://instagram.com/" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="tel:+919999999999" class="social-link" title="Call Us"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick <span>Links</span></h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Our <span>Services</span></h4>
+        <ul class="footer-links">
+          <li><a href="#">Personal Training</a></li>
+          <li><a href="#">Yoga Classes</a></li>
+          <li><a href="#">Zumba / Dance</a></li>
+          <li><a href="#">Nutrition Plan</a></li>
+          <li><a href="#">Doctor Consultation</a></li>
+          <li><a href="#">Group Training</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get In <span>Touch</span></h4>
+        <ul class="footer-contact">
+          <li><span>📍</span><div>123, Fitness Street, Your City, State – 000000</div></li>
+          <li><span>📞</span><div><a href="tel:+919999999999">+91 99999 99999</a><br><a href="tel:+919999999998">+91 99999 99998</a></div></li>
+          <li><span>✉</span><div><a href="mailto:info@powerforgegym.com">info@powerforgegym.com</a></div></li>
+          <li><span>⏰</span><div>Mon–Sat: 5:00 AM – 11:00 PM<br>Sunday: 6:00 AM – 9:00 PM</div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 PowerForge Gym. All Rights Reserved.</p>
+      <p><a href="#">Privacy Policy</a> · <a href="#">Terms of Use</a></p>
+    </div>
+  </footer>
+
+  <!-- Floating Contact Buttons -->
+  <div class="floating-contact">
+    <a href="tel:+919999999999" class="float-item call-item">
+      <span class="float-text">Call Us</span>
+      <span class="float-icon-wrap">
+        <i class="fas fa-phone"></i>
+      </span>
+    </a>
+    <a href="https://wa.me/919999999999?text=Hi, I want to know about PowerForge Gym!" class="float-item wa-item" target="_blank">
+      <span class="float-text">WhatsApp Us</span>
+      <span class="float-icon-wrap">
+        <i class="fab fa-whatsapp"></i>
+      </span>
+    </a>
+  </div>
+
+  <!-- Scroll to Top -->
+  <div class="scroll-top">↑</div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
