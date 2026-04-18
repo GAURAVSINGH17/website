@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BE Fitness - Premium Gym & Training Center</title>
+    <meta name="description" content="Transform your body and mind at BE Fitness. Expert trainers, modern equipment, personalized programs.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+<base target="_blank">
+</head>
+<body>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <!-- EDIT: Update logo.png with client's actual logo -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt=" BE Fitness Logo">
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#trainers" class="nav-link">Trainers</a></li>
+                    <li><a href="#pricing" class="nav-link">Membership</a></li>
+                    <li><a href="#schedule" class="nav-link">Schedule</a></li>
+                    <li><a href="#bmi" class="nav-link">BMI Calc</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <a href="#contact" class="btn btn-primary nav-cta">Join Now</a>
+
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <!-- EDIT: Replace hero-bg.jpg with high-quality gym interior/action shot -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <video autoplay loop muted playsinline class="hero-video">
+                <source src="images/hero-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <!-- EDIT: Update headline text as per client's preference -->
+                <div class="welcome-subtitle">WELCOME TO</div>
+                <h1 class="hero-title-new">BE FITNESS</h1>
+
+                <!-- EDIT: Update subtitle -->
+                <p class="hero-subtitle">
+                    Join BE FITNESS - where passion meets performance. 
+                    State-of-the-art equipment, expert trainers, and a community that pushes you to be your best.
+                </p>
+
+                <div class="hero-buttons">
+                    <!-- EDIT: Update button text/links -->
+                    <a href="#pricing" class="btn btn-primary btn-large">
+                        <i class="fas fa-fire"></i> Start Your Journey
+                    </a>
+                    <a href="#about" class="btn btn-outline btn-large">
+                        <i class="fas fa-play-circle"></i> Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <!-- EDIT: Replace about-image.jpg with gym owner photo or facility image -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">More Than Just a <span class="highlight">Gym</span></h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/about-facility.jpg" alt="BE Fitness Facility">
+                    <div class="experience-badge">
+                        <span class="exp-number">15+</span>
+                        <span class="exp-text">Years of<br>Excellence</span>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <!-- EDIT: Update all text content below with client's actual story -->
+                    <h3>Building Strength, Building Community</h3>
+
+                    <p class="about-text">
+                        At <strong>BE Fitness</strong>, we are led by a passionate owner and a team of 
+                        expert trainers committed to helping you achieve your best self. Our vision is to create 
+                        a space where fitness is more than just a workout — it's a lifestyle.
+                    </p>
+
+                    <p class="about-text">
+                        Backed by years of experience, our trainers bring personalized attention, cutting-edge 
+                        techniques, and real motivation to every session. Whether you're just starting out or 
+                        aiming for peak performance, we're here to guide, support, and inspire you every step of the way.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Personalized Training Programs</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>State-of-the-Art Equipment</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Nutrition & Diet Planning</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 Access for Members</span>
+                        </div>
+                    </div>
+
+                    <a href="#services" class="btn btn-secondary">Explore Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== VIDEO SECTION ==================== -->
+    <section class="video-tour" id="video-tour">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Tour</span>
+                <h2 class="section-title">Experience Our <span class="highlight">Gym</span></h2>
+            </div>
+            <div class="video-container">
+                <video autoplay loop muted playsinline>
+                    <source src="images/tour-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <!-- EDIT: Replace service images with actual gym service photos -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Services</span>
+                <h2 class="section-title">What We <span class="highlight">Offer</span></h2>
+                <p class="section-subtitle">Comprehensive fitness solutions tailored to your goals</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1: Personal Training -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/service-strength.jpg" alt="Personal Training">
+                        <div class="service-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Personal Training</h3>
+                        <p>One-on-one sessions with certified trainers. Customized workout plans designed specifically for your body type and fitness goals.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 2: Group Classes -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/service-group-classes.jpg" alt="Group Classes">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Group Classes</h3>
+                        <p>High-energy group workouts including Zumba, Yoga, HIIT, and Spinning. Build community while burning calories.</p>
+                        <a href="#schedule" class="service-link">View Schedule <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 3: Strength Training -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/service-cardio.jpg" alt="Strength Training">
+                        <div class="service-icon">
+                            <i class="fas fa-fist-raised"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Strength & Conditioning</h3>
+                        <p>Full range of free weights, machines, and functional training equipment. Build muscle, increase power, and boost metabolism.</p>
+                        <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 4: Weight Training -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/gallery-3.jpg" alt="Weight Training">
+                        <div class="service-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Weight Training</h3>
+                        <p>Targeted exercises to build muscle, increase strength, and improve overall fitness. Personalized programs for all fitness levels.</p>
+                        <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 5: Diet plan -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/gallery-4.jpg" alt="Diet Plan">
+                        <div class="service-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Diet Plan</h3>
+                        <p>Personalized nutrition plans designed by certified dietitians. Achieve your health and fitness goals with balanced, delicious meals.</p>
+                        <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 6: Cardio Zone -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/service-personal-training.jpg" alt="Cardio Zone">
+                        <div class="service-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Cardio Zone</h3>
+                        <p>Top-tier treadmills, ellipticals, rowers, and bikes. Monitor your heart rate and track progress with smart equipment.</p>
+                        <a href="#contact" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TRAINERS SECTION ==================== -->
+    <!-- EDIT: Replace trainer-1.jpg to trainer-6.jpg with actual trainer photos -->
+    <!-- EDIT: Update names, titles, and bios for each trainer -->
+    <section class="trainers" id="trainers">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Expert Team</span>
+                <h2 class="section-title">Meet Our <span class="highlight">Trainers</span></h2>
+                <p class="section-subtitle">Certified professionals dedicated to your success</p>
+            </div>
+
+            <div class="trainers-grid">
+                <!-- Trainer 1 -->
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="images/trainer-lead.jpg" alt="Trainer Name">
+                        <div class="trainer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Rahul Sharma</h3>
+                        <span class="trainer-title">Head Coach & Founder</span>
+                        <p class="trainer-bio">10+ years in fitness industry. Specialist in body transformation and strength training.</p>
+                        <div class="trainer-certs">
+                            <span class="cert-tag">ACE Certified</span>
+                            <span class="cert-tag">CrossFit L2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer 2 -->
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="images/trainer-specialist.jpg" alt="Trainer Name">
+                        <div class="trainer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Priya Patel</h3>
+                        <span class="trainer-title">Yoga & Wellness Expert</span>
+                        <p class="trainer-bio">Certified yoga instructor with 8 years experience. Specializes in mindfulness and flexibility.</p>
+                        <div class="trainer-certs">
+                            <span class="cert-tag">RYT-500</span>
+                            <span class="cert-tag">Nutritionist</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer 3 -->
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="images/service-facilities.jpg" alt="Trainer Name">
+                        <div class="trainer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Vikram Singh</h3>
+                        <span class="trainer-title">Strength & Conditioning</span>
+                        <p class="trainer-bio">Former national athlete. Expert in powerlifting and athletic performance enhancement.</p>
+                        <div class="trainer-certs">
+                            <span class="cert-tag">NSCA-CSCS</span>
+                            <span class="cert-tag">ISSA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer 4 -->
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="images/trainer-yoga.jpg" alt="Trainer Name">
+                        <div class="trainer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Ananya Gupta</h3>
+                        <span class="trainer-title">HIIT & Cardio Specialist</span>
+                        <p class="trainer-bio">Energetic trainer specializing in high-intensity workouts and weight loss programs.</p>
+                        <div class="trainer-certs">
+                            <span class="cert-tag">ACE-CPT</span>
+                            <span class="cert-tag">TRX Certified</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer 5 -->
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="images/gallery-1.jpg" alt="Trainer Name">
+                        <div class="trainer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Arjun Mehta</h3>
+                        <span class="trainer-title">Functional Training Expert</span>
+                        <p class="trainer-bio">Specializes in mobility, rehabilitation, and functional movement patterns for all ages.</p>
+                        <div class="trainer-certs">
+                            <span class="cert-tag">FMS Level 2</span>
+                            <span class="cert-tag">NASM-CES</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer 6 -->
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="images/gallery-2.jpg" alt="Trainer Name">
+                        <div class="trainer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Neha Kapoor</h3>
+                        <span class="trainer-title">Nutrition & Weight Loss</span>
+                        <p class="trainer-bio">Combines fitness training with personalized nutrition plans for sustainable results.</p>
+                        <div class="trainer-certs">
+                            <span class="cert-tag">Precision Nutrition</span>
+                            <span class="cert-tag">ACE-CPT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRICING SECTION ==================== -->
+    <!-- EDIT: Update prices, features, and plan names as per client's pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Membership</span>
+                <h2 class="section-title">Choose Your <span class="highlight">Plan</span></h2>
+                <p class="section-subtitle">Flexible memberships designed for every fitness level</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Basic</h3>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">1,999</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-desc">Perfect for beginners starting their fitness journey</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Gym Access (6 AM - 10 PM)</li>
+                        <li><i class="fas fa-check"></i> Cardio & Weight Equipment</li>
+                        <li><i class="fas fa-check"></i> Locker Room Access</li>
+                        <li><i class="fas fa-check"></i> Free WiFi</li>
+                        <li><i class="fas fa-check"></i> 1 Fitness Assessment</li>
+                        <li class="not-included"><i class="fas fa-times"></i> Group Classes</li>
+                        <li class="not-included"><i class="fas fa-times"></i> Personal Training</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
+                </div>
+
+                <!-- Premium Plan (Featured) -->
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Premium</h3>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">3,499</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-desc">Our most popular choice for serious fitness enthusiasts</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 24/7 Gym Access</li>
+                        <li><i class="fas fa-check"></i> All Equipment Access</li>
+                        <li><i class="fas fa-check"></i> Unlimited Group Classes</li>
+                        <li><i class="fas fa-check"></i> 2 Personal Training Sessions</li>
+                        <li><i class="fas fa-check"></i> Nutrition Consultation</li>
+                        <li><i class="fas fa-check"></i> Sauna & Steam Room</li>
+                        <li><i class="fas fa-check"></i> Guest Passes (2/month)</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-block">Join Now</a>
+                </div>
+
+                <!-- Elite Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Elite</h3>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">5,999</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-desc">Ultimate package with personalized attention</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Everything in Premium</li>
+                        <li><i class="fas fa-check"></i> 8 Personal Training Sessions</li>
+                        <li><i class="fas fa-check"></i> Custom Meal Plans</li>
+                        <li><i class="fas fa-check"></i> Monthly Body Composition</li>
+                        <li><i class="fas fa-check"></i> Priority Class Booking</li>
+                        <li><i class="fas fa-check"></i> Premium Locker</li>
+                        <li><i class="fas fa-check"></i> Unlimited Guest Passes</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-block">Go Elite</a>
+                </div>
+            </div>
+
+            <div class="pricing-note">
+                <p><i class="fas fa-info-circle"></i> All plans include a 3-day free trial. No long-term contracts required.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SCHEDULE SECTION ==================== -->
+    <!-- EDIT: Update class schedule times and names as per actual gym schedule -->
+    <section class="schedule" id="schedule">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Timetable</span>
+                <h2 class="section-title">Class <span class="highlight">Schedule</span></h2>
+                <p class="section-subtitle">Find the perfect time for your workout</p>
+            </div>
+
+            <div class="schedule-tabs">
+                <button class="tab-btn active" data-day="monday">Monday</button>
+                <button class="tab-btn" data-day="tuesday">Tuesday</button>
+                <button class="tab-btn" data-day="wednesday">Wednesday</button>
+                <button class="tab-btn" data-day="thursday">Thursday</button>
+                <button class="tab-btn" data-day="friday">Friday</button>
+                <button class="tab-btn" data-day="saturday">Saturday</button>
+                <button class="tab-btn" data-day="sunday">Sunday</button>
+            </div>
+
+            <div class="schedule-content">
+                <!-- Monday Schedule -->
+                <div class="schedule-day active" id="monday">
+                    <div class="class-list">
+                        <div class="class-item">
+                            <div class="class-time">06:00 AM</div>
+                            <div class="class-info">
+                                <h4>Morning Yoga</h4>
+                                <span class="class-instructor"><i class="fas fa-user"></i> Priya Patel</span>
+                                <span class="class-duration"><i class="fas fa-clock"></i> 60 min</span>
+                            </div>
+                            <span class="class-level beginner">Beginner</span>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-time">09:00 AM</div>
+                            <div class="class-info">
+                                <h4>HIIT Blast</h4>
+                                <span class="class-instructor"><i class="fas fa-user"></i> Ananya Gupta</span>
+                                <span class="class-duration"><i class="fas fa-clock"></i> 45 min</span>
+                            </div>
+                            <span class="class-level advanced">Advanced</span>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-time">06:00 PM</div>
+                            <div class="class-info">
+                                <h4>Strength Training</h4>
+                                <span class="class-instructor"><i class="fas fa-user"></i> Vikram Singh</span>
+                                <span class="class-duration"><i class="fas fa-clock"></i> 60 min</span>
+                            </div>
+                            <span class="class-level intermediate">Intermediate</span>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-time">07:30 PM</div>
+                            <div class="class-info">
+                                <h4>Zumba Fitness</h4>
+                                <span class="class-instructor"><i class="fas fa-user"></i> Neha Kapoor</span>
+                                <span class="class-duration"><i class="fas fa-clock"></i> 60 min</span>
+                            </div>
+                            <span class="class-level all">All Levels</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other days (Tuesday-Sunday) - Similar structure -->
+                <div class="schedule-day" id="tuesday">
+                    <div class="class-list">
+                        <div class="class-item">
+                            <div class="class-time">07:00 AM</div>
+                            <div class="class-info">
+                                <h4>CrossFit</h4>
+                                <span class="class-instructor"><i class="fas fa-user"></i> Rahul Sharma</span>
+                                <span class="class-duration"><i class="fas fa-clock"></i> 60 min</span>
+                            </div>
+                            <span class="class-level advanced">Advanced</span>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-time">06:00 PM</div>
+                            <div class="class-info">
+                                <h4>Functional Fitness</h4>
+                                <span class="class-instructor"><i class="fas fa-user"></i> Arjun Mehta</span>
+                                <span class="class-duration"><i class="fas fa-clock"></i> 45 min</span>
+                            </div>
+                            <span class="class-level all">All Levels</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add other days similarly -->
+                <div class="schedule-day" id="wednesday">
+                    <p class="no-classes">Rest Day - Open Gym Only</p>
+                </div>
+                <div class="schedule-day" id="thursday">
+                    <p class="no-classes">Schedule similar to Tuesday</p>
+                </div>
+                <div class="schedule-day" id="friday">
+                    <p class="no-classes">Schedule similar to Monday</p>
+                </div>
+                <div class="schedule-day" id="saturday">
+                    <div class="class-list">
+                        <div class="class-item">
+                            <div class="class-time">09:00 AM</div>
+                            <div class="class-info">
+                                <h4>Weekend Warrior</h4>
+                                <span class="class-instructor"><i class="fas fa-user"></i> Team Rotation</span>
+                                <span class="class-duration"><i class="fas fa-clock"></i> 90 min</span>
+                            </div>
+                            <span class="class-level all">All Levels</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule-day" id="sunday">
+                    <p class="no-classes">Open Gym Only - 8 AM to 2 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BMI CALCULATOR SECTION ==================== -->
+    <section class="bmi-section" id="bmi">
+        <div class="container">
+            <div class="bmi-wrapper">
+                <div class="bmi-content">
+                    <div class="section-header left-align">
+                        <span class="section-tag">Health Tool</span>
+                        <h2 class="section-title">BMI <span class="highlight">Calculator</span></h2>
+                        <p>Calculate your Body Mass Index to understand your health status and set realistic fitness goals.</p>
+                    </div>
+
+                    <div class="bmi-calculator">
+                        <div class="input-group">
+                            <label for="height">Height (cm)</label>
+                            <input type="number" id="height" placeholder="Enter height in cm" min="50" max="300">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="weight">Weight (kg)</label>
+                            <input type="number" id="weight" placeholder="Enter weight in kg" min="20" max="300">
+                        </div>
+
+                        <button class="btn btn-primary btn-block" onclick="calculateBMI()">
+                            <i class="fas fa-calculator"></i> Calculate BMI
+                        </button>
+
+                        <div class="bmi-result" id="bmiResult" style="display: none;">
+                            <div class="result-box">
+                                <span class="result-label">Your BMI</span>
+                                <span class="result-value" id="bmiValue">0</span>
+                                <span class="result-category" id="bmiCategory">Normal</span>
+                            </div>
+                            <div class="bmi-scale">
+                                <div class="scale-bar">
+                                    <div class="scale-fill" id="scaleFill"></div>
+                                </div>
+                                <div class="scale-labels">
+                                    <span>Underweight</span>
+                                    <span>Normal</span>
+                                    <span>Overweight</span>
+                                    <span>Obese</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bmi-info">
+                    <h3>BMI Categories</h3>
+                    <div class="bmi-categories">
+                        <div class="category-item underweight">
+                            <span class="category-color"></span>
+                            <span class="category-name">Underweight</span>
+                            <span class="category-range">Below 18.5</span>
+                        </div>
+                        <div class="category-item normal">
+                            <span class="category-color"></span>
+                            <span class="category-name">Normal Weight</span>
+                            <span class="category-range">18.5 - 24.9</span>
+                        </div>
+                        <div class="category-item overweight">
+                            <span class="category-color"></span>
+                            <span class="category-name">Overweight</span>
+                            <span class="category-range">25 - 29.9</span>
+                        </div>
+                        <div class="category-item obese">
+                            <span class="category-color"></span>
+                            <span class="category-name">Obese</span>
+                            <span class="category-range">30 and Above</span>
+                        </div>
+                    </div>
+                    <p class="bmi-note"><i class="fas fa-info-circle"></i> BMI is a general indicator. Consult our trainers for a comprehensive body composition analysis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS SECTION ==================== -->
+    <!-- EDIT: Replace testimonial images and update names/quotes -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Success Stories</span>
+                <h2 class="section-title">What Our <span class="highlight">Members</span> Say</h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="images/testimonial-mahesh.jpg" alt="Member">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-author">
+                            <h4>Mahesh Kumar Saini</h4>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"This GYM is very passionate about building your Health & Fitness. This GYM provides more facilities like Personalized GYM Trainer, Group Fitness Classes, Pilates Sessions, TRX & Kick Boxing Sessions. So, I recommend the GYM for your Fitness in Indirapuram."</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="images/testimonial-mukund.jpg" alt="Member">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-author">
+                            <h4>Mukund Sharma</h4>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Great gym with top-quality equipment and a motivating atmosphere. Trainers are supportive and the space is always clean and well-maintained."</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <div class="initial-avatar" style="background:#009688; color:white; width:100%; height:100%; display:flex; align-items:center; justify-content:center; font-size:40px;">U</div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-author">
+                            <h4>Uttam Singh Panda</h4>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"BE Fitness Gym is Awesome! Top-notch equipment, knowledgeable personal trainers, and a motivating and spacious atmosphere. Great for cardio, strength training, and trending pilates sessions. Highly recommend!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <!-- EDIT: Update address, phone, email, map location, and working hours -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Start Your <span class="highlight">Journey</span></h2>
+                <p class="section-subtitle">Visit us for a free tour or drop us a message</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>123 Fitness Street, Health City<br>Mumbai, Maharashtra 400001</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210<br>+91 98765 43211</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>info@componentsoffitness.co.in<br>memberships@componentsoffitness.co.in</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Working Hours</h4>
+                            <p>Mon-Fri: 5:00 AM - 11:00 PM<br>Sat-Sun: 6:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Your phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interest">Interested In</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select an option</option>
+                                <option value="membership">Gym Membership</option>
+                                <option value="personal-training">Personal Training</option>
+                                <option value="group-classes">Group Classes</option>
+                                <option value="nutrition">Nutrition Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your fitness goals..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block btn-large">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="map-container">
+                <!-- EDIT: Replace with actual Google Maps embed code for client's location -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.601!2d72.828!3d19.076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA0JzMzLjYiTiA3MsKwNDknNDAuOCJF!5e0!3m2!1sen!2sin!4v1234567890" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <img src="images/logo.png" alt="BE Fitness">
+                    </a>
+                    <p>Transform your body, elevate your life. Join Mumbai's premier fitness destination.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#trainers">Trainers</a></li>
+                        <li><a href="#pricing">Membership</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Personal Training</a></li>
+                        <li><a href="#services">Group Classes</a></li>
+                        <li><a href="#services">Nutrition Plans</a></li>
+                        <li><a href="#services">Corporate Wellness</a></li>
+                        <li><a href="#bmi">BMI Calculator</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for fitness tips, offers, and updates.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 BE Fitness. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contact">
+        <div class="float-item">
+            <span class="float-text">Call Us Now</span>
+            <a href="tel:+919876543210" class="float-btn call-btn">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+        <div class="float-item">
+            <span class="float-text">WhatsApp Us</span>
+            <a href="https://wa.me/919876543210" class="float-btn wa-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
