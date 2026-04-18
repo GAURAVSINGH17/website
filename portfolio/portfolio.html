@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Web Developer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- BACKGROUND BLOBS -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar glass">
+        <div class="container">
+            <a href="index.html" class="nav-brand text-gradient">My Portfolio</a>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html" class="active">Portfolio</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <button class="mobile-menu-btn">
+                <i class='bx bx-menu'></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="section-padding" style="padding-top: 150px; padding-bottom: 50px;">
+        <div class="container" style="text-align: center;">
+            <h1 class="section-title" style="margin-bottom: 1rem;">My <span class="text-gradient">Latest Work</span></h1>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">Browse through my recent projects. These are responsive, high-performance templates designed to convert visitors into clients.</p>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="section-padding reveal" style="padding-top: 0;">
+        <div class="container">
+            
+            <!-- Filters -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="gym">Gym & Fitness</button>
+                <button class="filter-btn" data-filter="restaurant">Restaurants</button>
+                <button class="filter-btn" data-filter="corporate">Corporate</button>
+            </div>
+
+            <!-- Gallery -->
+            <div class="portfolio-grid">
+                
+                <!-- Gym Template 1 -->
+                <div class="portfolio-card portfolio-item" data-category="gym">
+                    <img src="power.jpg" alt="PowerForge Gym" class="portfolio-img" loading="lazy">
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Gym & Fitness</span>
+                        <h3>PowerForge Gym</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">A premium, dark-mode gym website featuring glassmorphism and motivational content.</p>
+                        <a href="templates/gym-website/index.html" class="btn btn-primary" target="_blank" style="width: 100%; font-size: 0.9rem; padding: 0.6rem;">View Live Demo</a>
+                    </div>
+                </div>
+
+                <!-- Gym Template 2 -->
+                <div class="portfolio-card portfolio-item" data-category="gym">
+                    <img src="4.jpg" alt="BE Fitness" class="portfolio-img" loading="lazy">
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Gym & Fitness</span>
+                        <h3>BE Fitness</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">A premium fitness platform featuring glassmorphism, interactive training schedules, and high-conversion landing pages for elite gyms.</p>
+                        <a href="templates/BE Fitness/index.html" class="btn btn-primary" target="_blank" style="width: 100%; font-size: 0.9rem; padding: 0.6rem;">View Live Demo</a>
+                    </div>
+                </div>
+
+                <!-- Gym Template 3 -->
+                <div class="portfolio-card portfolio-item" data-category="gym">
+                    <img src="activitar.jpg" alt="Activitar" class="portfolio-img" loading="lazy">
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Gym & Fitness</span>
+                        <h3>Activitar</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">A high-energy, modern template focused on community building and advanced workout tracking for professional fitness centers.</p>
+                        <a href="templates/activitar-master/index.html" class="btn btn-primary" target="_blank" style="width: 100%; font-size: 0.9rem; padding: 0.6rem;">View Live Demo</a>
+                    </div>
+                </div>
+                
+                <!-- Gym Template 4 -->
+                <div class="portfolio-card portfolio-item" data-category="gym">
+                    <img src="gym.jpg" alt="GymLife" class="portfolio-img" loading="lazy">
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Gym & Fitness</span>
+                        <h3>GymLife</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">A comprehensive gym template with focus on community and best-in-class facilities.</p>
+                        <a href="templates/gymlife-master/index.html" class="btn btn-primary" target="_blank" style="width: 100%; font-size: 0.9rem; padding: 0.6rem;">View Live Demo</a>
+                    </div>
+                </div>
+
+                <!-- Future Restaurant Template Placeholder -->
+                <div class="portfolio-card portfolio-item" data-category="restaurant">
+                    <div style="width: 100%; height: 250px; background: #222; display: flex; align-items: center; justify-content: center;">
+                        <i class='bx bx-restaurant' style="font-size: 4rem; color: #444;"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Restaurants</span>
+                        <h3>Coming Soon...</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">High-converting restaurant menu and reservation system.</p>
+                        <button class="btn btn-outline" style="opacity: 0.5; cursor: not-allowed; width: 100%; font-size: 0.9rem; padding: 0.6rem;">Coming Soon</button>
+                    </div>
+                </div>
+
+                
+                <!-- Future Restaurant Template Placeholder -->
+                <div class="portfolio-card portfolio-item" data-category="restaurant">
+                    <div style="width: 100%; height: 250px; background: #222; display: flex; align-items: center; justify-content: center;">
+                        <i class='bx bx-restaurant' style="font-size: 4rem; color: #444;"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Restaurants</span>
+                        <h3>Coming Soon...</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">High-converting restaurant menu and reservation system.</p>
+                        <button class="btn btn-outline" style="opacity: 0.5; cursor: not-allowed; width: 100%; font-size: 0.9rem; padding: 0.6rem;">Coming Soon</button>
+                    </div>
+                </div>
+
+                <!-- Future Restaurant Template Placeholder -->
+                <div class="portfolio-card portfolio-item" data-category="restaurant">
+                    <div style="width: 100%; height: 250px; background: #222; display: flex; align-items: center; justify-content: center;">
+                        <i class='bx bx-restaurant' style="font-size: 4rem; color: #444;"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Restaurants</span>
+                        <h3>Coming Soon...</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">High-converting restaurant menu and reservation system.</p>
+                        <button class="btn btn-outline" style="opacity: 0.5; cursor: not-allowed; width: 100%; font-size: 0.9rem; padding: 0.6rem;">Coming Soon</button>
+                    </div>
+                </div>
+
+                <!-- Future Restaurant Template Placeholder -->
+                <div class="portfolio-card portfolio-item" data-category="restaurant">
+                    <div style="width: 100%; height: 250px; background: #222; display: flex; align-items: center; justify-content: center;">
+                        <i class='bx bx-restaurant' style="font-size: 4rem; color: #444;"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Restaurants</span>
+                        <h3>Coming Soon...</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">High-converting restaurant menu and reservation system.</p>
+                        <button class="btn btn-outline" style="opacity: 0.5; cursor: not-allowed; width: 100%; font-size: 0.9rem; padding: 0.6rem;">Coming Soon</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+   <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="text-gradient">My Portfolio</h4>
+                    <p>Premium web development for local businesses looking to scale.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/codeflowsolutions17" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://wa.me/919953304840" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="portfolio.html">Portfolio</a></p>
+                    <p><a href="services.html">Services</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p><i class='bx bx-envelope'></i> codeflowsolutions17@gmail.com</p>
+                    <p><i class='bx bx-phone'></i> +91 9953304840</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 WebDev Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
