@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Web Developer Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Boxicons for standard icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .error-section {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 100px; /* Offset for navbar */
+        }
+        .error-code {
+            font-size: clamp(6rem, 15vw, 12rem);
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+            letter-spacing: -2px;
+            text-shadow: 0 0 40px rgba(0, 240, 255, 0.3);
+        }
+        .error-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BACKGROUND BLOBS -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar glass">
+        <div class="container">
+            <a href="index.html" class="nav-brand text-gradient">My Portfolio</a>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <button class="mobile-menu-btn">
+                <i class='bx bx-menu'></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 404 SECTION -->
+    <section class="error-section">
+        <div class="container">
+            <div class="glass reveal" style="padding: 4rem 2rem; border-radius: var(--border-radius); max-width: 800px; margin: 0 auto; border: 1px solid var(--accent-light); box-shadow: 0 0 30px rgba(0, 240, 255, 0.1);">
+                <h1 class="error-code text-gradient">404</h1>
+                <h2 class="error-title">Page Not Found</h2>
+                <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto 2.5rem; font-size: 1.1rem; line-height: 1.6;">
+                    Oops! It looks like you've wandered into the digital void. The page you are looking for might have been moved, renamed, or no longer exists.
+                </p>
+                <a href="index.html" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px;">
+                    <i class='bx bx-home-alt'></i> Return to Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="text-gradient">My Portfolio</h4>
+                    <p>Premium web development for local businesses looking to scale.</p>
+                    <div class="social-links">
+                        <a href="tel:+919953304840" target="_blank"><i class='bx bx-phone'></i></a>
+                        <a href="https://wa.me/919953304840" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="mailto:codeflowsolutions17@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="portfolio.html">Portfolio</a></p>
+                    <p><a href="services.html">Services</a></p>
+                    <p><a href="pricing.html">Pricing</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p><i class='bx bx-envelope'></i> codeflowsolutions17@gmail.com</p>
+                    <p><i class='bx bx-phone'></i> +91 9953304840</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 WebDev Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
